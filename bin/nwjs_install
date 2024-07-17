@@ -41,7 +41,7 @@ echo "Downloading nwjs..."
 set +e
 if [ "$ARCH" == "arm64" ]; then
 	main_uri="https://github.com/LeonardLaszlo/nw.js-armv7-binaries/releases/download/nw60-arm64_2022-01-08/nw60-arm64_2022-01-08.tar.gz"
-	curl -sL -o $TEMPFILE $main_uri
+	curl --max-time 10 -sL -o $TEMPFILE $main_uri
 	status=$?
 	if [ $status -ne 0 ] ; then
 		echo "Failed to download '$main_uri': $status"
@@ -53,13 +53,13 @@ if [ "$ARCH" == "arm64" ]; then
 	rm -rf docker
 else
 	main_uri="https://dl.nwjs.io/$VERSION/nwjs-$VERSION-$OS-$ARCH.tar.gz"
-	curl -sL -o $TEMPFILE $main_uri
+	curl --max-time 10  -sL -o $TEMPFILE $main_uri
 	status=$?
 	if [ $status -ne 0 ] ; then
 		echo "Failed to download '$main_uri': $status"
 		echo "Using mirror instead..."
 		mirror_uri="https://npm.taobao.org/mirrors/nwjs/$VERSION/nwjs-$VERSION-$OS-$ARCH.tar.gz"
-		curl -sL -o $TEMPFILE $mirror_uri
+		curl --max-time 10  -sL -o $TEMPFILE $mirror_uri
 		status=$?
 		if [ $status -ne 0 ] ; then
 			echo "Failed to download '$mirror_uri': $status"
