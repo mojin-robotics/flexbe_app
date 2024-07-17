@@ -63,7 +63,11 @@ else
 		status=$?
 		if [ $status -ne 0 ] ; then
 			echo "Failed to download '$mirror_uri': $status"
-			exit "$status"
+			echo "using local download $LOCAL_DOWNLOAD"
+			echo "$PWD"
+			#exit "$status"
+			LOCAL_DOWNLOAD="nwjs-$VERSION-$OS-$ARCH.tar.gz"
+			cp -f "$LOCAL_DOWNLOAD" $TEMPFILE
 		fi
 	fi
 fi
