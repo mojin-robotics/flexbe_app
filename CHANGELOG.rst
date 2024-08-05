@@ -1,6 +1,23 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package flexbe_app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Forthcoming
+-----------
+* Merge pull request `#25 <https://github.com/mojin-robotics/flexbe_app/issues/25>`_ from ConstantConstantin/patch-1
+  add dependabot for github-actions
+* add dependabot for github-actions
+* Merge pull request `#22 <https://github.com/mojin-robotics/flexbe_app/issues/22>`_ from benmaidel/feature/arm64_support
+  add arm64 support
+* add arm64 support by community build binaries
+* update to version 0.60.0
+* Merge pull request `#24 <https://github.com/mojin-robotics/flexbe_app/issues/24>`_ from fmessmer/fix/update_gha_version
+  update action version
+* update action version
+* Merge pull request `#23 <https://github.com/mojin-robotics/flexbe_app/issues/23>`_ from fmessmer/fix/ci
+  remove kinetic job
+* remove kinetic job
+* Contributors: Benjamin Maidel, Constantin-Paul Hertel, Felix Messmer, fmessmer
+
 2.4.2 (2023-09-21)
 ------------------
 
