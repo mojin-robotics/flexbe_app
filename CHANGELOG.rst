@@ -1,8 +1,8 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog for package flexbe_app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Forthcoming
------------
+2.4.3 (2024-08-05)
+------------------
 * Merge pull request `#25 <https://github.com/mojin-robotics/flexbe_app/issues/25>`_ from ConstantConstantin/patch-1
   add dependabot for github-actions
 * add dependabot for github-actions
